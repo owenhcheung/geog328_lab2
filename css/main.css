@@ -11,10 +11,8 @@ html, body {
   justify-content: space-between;
 }
 
-.sect {
-  width: 15%;
-  display: flex;
-  justify-content: space-between;
+.sect a {
+  margin-left: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -49,13 +47,12 @@ Change the color of links on hover */
 /* When the screen is less than 800 pixels wide */
 @media screen and (max-width: 800px) {
   /* Hide all links, except for the selected tab */
-  .topnav a:not(.active) {
+  .sect {
     display: none;
   }
 
   /* Show the icon that should open and close the topnav */
-  .topnav a.icon {
-    float: right;
+  .topnav .icon {
     display: block;
   }
 }
@@ -69,16 +66,17 @@ Change the color of links on hover */
     position: relative;
   }
 
-  .topnav.responsive a.icon {
+  /* .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
 
-  .topnav.responsive a {
+  .topnav.responsive .sect {
     float: none;
     display: block;
     text-align: left;
+    background-color: #eeeeee;
   }
 }
 
